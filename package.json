@@ -1,0 +1,29 @@
+{
+  "name": "refactoring",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrbytes/refactoring.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrbytes/refactoring/issues"
+  },
+  "homepage": "https://github.com/jrbytes/refactoring#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/node": "^7.10.4",
+    "@babel/preset-env": "^7.10.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

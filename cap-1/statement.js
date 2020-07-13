@@ -1,8 +1,8 @@
-const createStatementData = require('./createStatementData')
-const invoice = require('./invoices')
-const plays = require('./plays')
+import createStatementData from './createStatementData'
+import invoice from './invoices'
+import plays from './plays'
 
-console.log(statement(invoice, plays))
+console.log(htmlStatement(invoice, plays))
 
 function statement(invoice, plays) {
   return renderPlainText(createStatementData(invoice, plays))
