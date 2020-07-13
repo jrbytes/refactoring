@@ -2,7 +2,7 @@ import createStatementData from './createStatementData'
 import invoice from './invoices'
 import plays from './plays'
 
-console.log(htmlStatement(invoice, plays))
+export default htmlStatement(invoice, plays)
 
 function statement(invoice, plays) {
   return renderPlainText(createStatementData(invoice, plays))
