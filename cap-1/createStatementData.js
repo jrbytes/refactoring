@@ -36,6 +36,10 @@ class PerformanceCalculator {
   }
 }
 
+function createPerformanceCalculator(aPerformance, aPlay) {
+  return new PerformanceCalculator(aPerformance, aPlay)
+}
+
 export default function createStatementData(invoice, plays) {
   const result = {}
   result.customer = invoice.customer
@@ -61,10 +65,6 @@ export default function createStatementData(invoice, plays) {
     result.amount = calculator.amount
     result.volumeCredits = calculator.volumeCredits
     return result
-  }
-
-  function createPerformanceCalculator(aPerformance, aPlay) {
-    return new PerformanceCalculator(aPerformance, aPlay)
   }
 
   function playFor(aPerformance) {
