@@ -1,13 +1,13 @@
 module.exports = {
-  "hamlet": { 
+  "hamlet": {
     "name": "Hamlet",
     "type": "tragedy"
   },
-  "as-like": { 
+  "as-like": {
     "name": "As You Like It",
     "type": "comedy"
   },
-  "othello": { 
+  "othello": {
     "name": "Othello",
     "type": "tragedy"
   }

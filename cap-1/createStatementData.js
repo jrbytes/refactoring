@@ -10,7 +10,7 @@ export default function createStatementData(invoice, plays) {
     return data.performances
       .reduce((total, p) => total + p.amount, 0)
   }
-  
+
   function totalVolumeCredits(data) {
     return data.performances
       .reduce((total, p) => total + p.volumeCredits, 0)
@@ -68,7 +68,7 @@ class ComedyCalculator extends PerformanceCalculator {
   get volumeCredits() {
     return super.volumeCredits + Math.floor(this.performance.audience / 5)
   }
-  
+
   get amount() {
     let result = 30000
     if (this.performance.audience > 20) {

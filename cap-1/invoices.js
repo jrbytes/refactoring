@@ -1,6 +1,6 @@
 module.exports = {
   "customer": "BigCo",
-  "performances": 
+  "performances":
   [
     {
       "playID": "hamlet",

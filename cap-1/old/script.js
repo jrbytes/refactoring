@@ -10,7 +10,7 @@ function statement (invoice, plays) {
   const format = new Intl.NumberFormat('en-US', {
     style: 'currency', currency: 'USD', minimumFractionDigits: 2
   }).format
-  
+
   for (let perf of invoice.performances) {
     const play = plays[perf.playID]
     let thisAmount = 0
@@ -29,11 +29,11 @@ function statement (invoice, plays) {
         }
         thisAmount += 300 * perf.audience
         break
-    
+
       default:
         throw new Error(`unknown type: ${play.type}`)
     }
-  
+
   volumeCredits += Math.max(perf.audience - 30, 0)
 
   if ('comedy' === play.type) volumeCredits += Math.floor(perf.audience / 5)
