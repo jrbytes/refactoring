@@ -1,18 +1,17 @@
 module.exports = {
-  "customer": "BigCo",
-  "performances":
-  [
+  customer: 'BigCo',
+  performances: [
     {
-      "playID": "hamlet",
-      "audience": 55
+      playID: 'hamlet',
+      audience: 55,
     },
     {
-      "playID": "as-like",
-      "audience": 35
+      playID: 'as-like',
+      audience: 35,
     },
     {
-      "playID": "othello",
-      "audience": 40
-    }
-  ]
+      playID: 'othello',
+      audience: 40,
+    },
+  ],
 }
