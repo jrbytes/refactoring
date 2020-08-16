@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node ."
+    "start": "babel-node .",
+    "test": "mocha -r esm ./cap-4/__tests__/"
   },
   "repository": {
     "type": "git",
@@ -22,11 +23,14 @@
     "@babel/core": "^7.10.4",
     "@babel/node": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
+    "chai": "^4.2.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.21.2",
     "eslint-plugin-prettier": "^3.1.4",
+    "esm": "^3.2.25",
+    "mocha": "^8.1.1",
     "prettier": "^2.0.5"
   },
   "dependencies": {
