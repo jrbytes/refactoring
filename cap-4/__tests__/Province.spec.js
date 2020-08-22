@@ -21,4 +21,22 @@ describe('province', function () {
     expect(asia.shortfall).equal(-6)
     expect(asia.profit).equal(292)
   })
+
+  it('zero demand', function () {
+    asia.demand = 0
+    expect(asia.shortfall).equal(-25)
+    expect(asia.profit).equal(0)
+  })
+
+  it('negative demand', function () {
+    asia.demand = -1
+    expect(asia.shortfall).equal(-26)
+    expect(asia.profit).equal(-10)
+  })
+
+  it('empty string demand', function () {
+    asia.demand = ''
+    expect(asia.shortfall).NaN
+    expect(asia.profit).NaN
+  })
 })
