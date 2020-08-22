@@ -27,3 +27,4 @@ Para executar:
 1. Faça o clone do repositório
 2. Instale as dependências com `npm install`
 3. Rode a aplicação com `npm start`
+4. Teste a aplicação com `npm test`
